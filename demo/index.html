@@ -21,7 +21,7 @@
       <h2>Rectangle, normal selection</h2>
       <code>
         new SVG('rect').size('100%', '100%')
-            .rect(600,200).move(50,50).select();
+            .rect(600,200).move(50,50).selectize();
       </code>
       <div id="rect"></div>
     </div>
@@ -31,7 +31,7 @@
       <code>
         new SVG('polygon_deep').size('100%', '100%')
             .polygon('350,50 283,250 450,122 250,122 416,250')
-            .select({deepSelect:true});
+            .selectize({deepSelect:true});
       </code>
       <div id="polygon_deep"></div>
     </div>
@@ -41,7 +41,7 @@
       <code>
         new SVG('polygon_both').size('100%', '100%')
             .polygon('350,50 283,250 450,122 250,122 416,250')
-            .select().select({deepSelect:true});
+            .selectize().selectize({deepSelect:true});
       </code>
       <div id="polygon_both"></div>
     </div>
@@ -54,7 +54,7 @@
             .attr('pointer-events',"visible");
  
         poly.on('mousedown', function(e){
-            poly.select().select({deepSelect:true});
+            poly.selectize().selectize({deepSelect:true});
         }, false);
       </code>
       <div id="polygon_click"></div>
