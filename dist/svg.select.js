@@ -401,7 +401,7 @@ SVG.extend(SVG.Element, {
 
         selectHandler.init(value === undefined ? true : value, options || {});
 
-        this.nested = selectHandler.nested;
+        this.rectSelection = selectHandler.nested;
 
         return this;
 
